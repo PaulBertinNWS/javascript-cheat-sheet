@@ -36,66 +36,80 @@ console.log(element);
 ## La fonction GetElementsByClassName()
 
 ### Que fait la fonction ?
-...
+
+La fonction GetElementsByClassName() fait référence à tous les éléments dans le document étant associé au nom de la classe spécifiée
+
 
 ### Pourquoi l'utiliser ?
-...
+
+La fonction getElementByClassName() doit être utilisée si l’on veut utiliser plusieurs éléments ayant une même classes du DOM en HTML grâce à Javascript
 
 ### Exemple de code:
 ```javascript
-// CODE
+let elements = document.getElementsByClassName('mon-elemnt');
+console.log(element);
 ```
 
 ## La fonction querySelector() et querySelectorAll()
 
 ### Que fait la fonction ?
-...
+querySelector () renvoie le premier élément qui correspond à un ou plusieurs _sélecteurs CSS_ spécifiés dans le document.
 
 ### Pourquoi l'utiliser ?
-...
+On peut utiliser querySelector () pour cibler un élément précis
+
+#### Note supplémentaire
+La méthode querySelector () renvoie uniquement le premier élément qui correspond aux sélecteurs spécifiés. Pour renvoyer toutes les correspondances, utilisez plutôt la méthode [querySelectorAll ()]
 
 ### Exemple de code:
 ```javascript
-// CODE
+element = document.querySelector(sélecteurs);
 ```
+
 
 ## La fonction addEventListener()
 
 ### Que fait la fonction ?
-...
+
+La fonction addEventListener () permet de lier un gestionnaire d'événements à l'élément spécifié.
 
 ### Pourquoi l'utiliser ?
-...
+On peut l'utiliser pour créer une animation lorsqu'on effectue une action (ex : cliquer pour activer notre fonction)
 
 ### Exemple de code:
 ```javascript
-// CODE
+document.getElementById("monid").addEventListener("click", myFunction);  
+  
+function myFunction() {  
+document.getElementById("demo").innerHTML = "Hello World";  
+}
 ```
 
 ## La fonction stopPropagation()
 
 ### Que fait la fonction ?
-...
+stopPorpagation() évite qu'un évènement se propage à un autre endroit que celui prévu initialement.
+
 
 ### Pourquoi l'utiliser ?
-...
+On peut l'utiliser pour fixer une largeur et un hauteur sur une image 
 
 ### Exemple de code:
 ```javascript
-// CODE
+_event_.stopPropagation();
 ```
 
 ## La fonction addEventListener('mousemove', maFonction)
 
 ### Que fait la fonction ?
-...
+La fonction addEventListener('mousemove', maFonction) permet d'associer la fonction "maFonction" au mouvement de la souris.
 
 ### Pourquoi l'utiliser ?
-...
+Pour créer un pointage suis la image ou un autre élément 
 
 ### Exemple de code:
 ```javascript
-// CODE
+maPhoto.addEventListener('mousemove', maFonction)
 ```
 
 ## La fonction parseInt()
@@ -110,21 +124,3 @@ console.log(element);
 ```javascript
 // CODE
 ```
-
-
-## La variable "event" dans le code suivant:
-
-### Code:
-```javascript
-element.addEventListener('event-name', function(event) {
-  console.log(event);
-});
-```
-
-### Qu'est-ce que cette variable ?
-...
-
-### Pourquoi l'utiliser ?
-...
-
-
